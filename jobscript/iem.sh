@@ -7,4 +7,6 @@ timeout 180 python -m SimpleHTTPServer 8081 &
 
 cd /opt/certbot
 # if something got renewed, sync content
+# Needs . in $PATH to work
+export PATH=$PATH:.
 sh certbot-auto renew --post-hook "sh iemsync.sh"
