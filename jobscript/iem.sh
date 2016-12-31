@@ -9,4 +9,4 @@ cd /opt/certbot
 # if something got renewed, sync content
 # Needs . in $PATH to work
 export PATH=$PATH:.
-sh certbot-auto renew --post-hook "sh iemsync.sh"
+sh certbot-auto renew --post-hook "sh /opt/lesync/jobscript/iemsync.sh"
