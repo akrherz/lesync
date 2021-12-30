@@ -5,6 +5,6 @@ cp -f /etc/letsencrypt/live/weather.im/privkey.pem /tmp/weatherim_privkey.pem
 # needs fullchain
 cp -f /etc/letsencrypt/live/weather.im/fullchain.pem /tmp/weatherim_cert.pem
 chown daemon:daemon /tmp/weatherim*.pem
-mv -f /tmp/weatherim*.pem /opt/openfire/resources/security/hotdeploy/
+rsync -a /tmp/weatherim*.pem iem16.local:/opt/openfire/resources/security/hotdeploy/
 
 exit 0
