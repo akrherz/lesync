@@ -20,5 +20,5 @@ more elegant solution!
 ## Deployment to /opt
 
 1. `cd /opt`
-2. `git clone https://github.com/certbot/certbot.git`
-3. `git clone https://github.com/akrherz/lesync.git`
+2. `git clone https://github.com/akrherz/lesync.git`
+3. `python -m pip install certbot`

@@ -6,8 +6,5 @@ cd /opt/lesync/webroot
 # certbot below now has a random sleep
 timeout 3600 python3 -m http.server 8081 &
 
-cd /opt/certbot
-# if something got renewed, sync content
-# Needs . in $PATH to work
-export PATH=$PATH:.
-sh certbot-auto renew --post-hook "sh /opt/lesync/jobscript/iemsync.sh"
+# python -m pip install certbot
+/usr/local/bin/certbot renew --post-hook "sh /opt/lesync/jobscript/iemsync.sh"
