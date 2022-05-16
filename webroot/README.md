@@ -1,4 +1,4 @@
 
 This is where certbot will write its temp files!
 
-`cd /opt/lesync/webroot; python -m SimpleHTTPServer 8081`
+`cd /opt/lesync/webroot; python3 -m http.server 8081`

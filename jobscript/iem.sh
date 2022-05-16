@@ -4,7 +4,7 @@
 cd /opt/lesync/webroot
 # hack to run this web server just for the next hour
 # certbot below now has a random sleep
-timeout 3600 python2 -m SimpleHTTPServer 8081 &
+timeout 3600 python3 -m http.server 8081 &
 
 cd /opt/certbot
 # if something got renewed, sync content
