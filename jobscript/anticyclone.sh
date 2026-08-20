@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eo pipefail
 
 cd /opt/lesync/webroot
 # hack to run this web server just for the next hour
