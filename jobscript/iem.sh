@@ -1,5 +1,6 @@
 #!/bin/bash
 # The workflow the IEM uses, I am run as root
+set -eo pipefail
 
 cd /opt/lesync/webroot
 # hack to run this web server just for the next hour
